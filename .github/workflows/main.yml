@@ -123,9 +123,9 @@ jobs:
       
       - name: delete the cache and Commit the logs
         run: |
-          rm -rf py.zip
-          zip -r -P ${{ secrets.PASSWORD }} py.zip bot.py my_message_pb2.py ghost.py acc.db Allowed_user.json
-          rm -rf bot.py 
+          rm -rf py.zip __pycache__
+          zip -r -P ${{ secrets.PASSWORD }} py.zip bot.py my_message_pb2.py ghost.py acc.db Allowed_user.json panel.py
+          rm -rf bot.py panel.py
           rm -rf my_message_pb2.py 
           rm -rf ghost.py
           rm -rr acc.db 
