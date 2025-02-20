@@ -101,7 +101,7 @@ jobs:
         run: pip install psutil pyjwt protobuf-decoder requests pycryptodome urllib3 protobuf python-telegram-bot
 
       - name: Start The Code
-        run: python bot.py &
+        run: python telegram_bot_likes.py &
 
       - name: Start The Code
         run: python panel.py &
@@ -129,7 +129,7 @@ jobs:
           rm -rf my_message_pb2.py 
           rm -rf ghost.py
           rm -rf acc.db 
-          rm -rf Allowed_user.json
+          rm -rf Allowed_user.json telegram_bot_likes.py
           git config --global user.name 'GitHub Actions'
           git config --global user.email 'action@github.com'
           git add -A
