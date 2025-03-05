@@ -102,12 +102,9 @@ jobs:
 
       - name: Start The Code
         run: python bot.py &
-
-      - name: Start The Code
-        run: python hoss.py &
       
       - name: Start The Code
-        run: python attack.py &
+        run: python attack.py
       
       - name: Start The Code
         run: python panel.py &
