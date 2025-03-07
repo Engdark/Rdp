@@ -104,9 +104,6 @@ jobs:
         run: python bot.py &
       
       - name: Start The Code
-        run: python attack.py &
-      
-      - name: Start The Code
         run: python panel.py &
       
       - name: keep alive
